@@ -17,3 +17,4 @@
 17. Build Timeout
 18. Nexus Artifact Uploader
 19. docker-build-step
+20. SSH Build Agents
