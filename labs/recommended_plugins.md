@@ -18,3 +18,7 @@
 18. Nexus Artifact Uploader
 19. docker-build-step
 20. SSH Build Agents
+21. GitLab Branch Source
+22. Bitbucket Branch Source
+23. GitHub Branch Source
+24. GitHub Pipeline for Blue Ocean
