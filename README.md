@@ -56,3 +56,16 @@ drwxrwxr-x  2 ubuntu ubuntu 4096 Aug 11 06:22 updates
 ```
 11. Access Jenkins Using `http://3.15.199.147:8080` on browser the 
 ![Jenkins Unlock](https://github.com/kul-samples/jenkins/blob/main/1_Unlock%20Jenkins.PNG?raw=true)
+12. Get Initial Admin Password `cat /JENKINS_HOME/secrets/initialAdminPassword`
+```
+ubuntu@jenkins:~$ cat /JENKINS_HOME/secrets/initialAdminPassword
+ec3e90ee616a4e4daa39a0a1bc7d3f79
+```
+13. Foloow the below Images to complete Raw Jenkins Setup
+![Insert_Admin_Password](https://github.com/kul-samples/jenkins/blob/main/2_Insert_admin_password.PNG?raw=true)
+![Customize_Jenkins](https://github.com/kul-samples/jenkins/blob/main/3_Customize%20Jenkins.PNG?raw=true)
+![Select_None_plugin](https://github.com/kul-samples/jenkins/blob/main/4_Select_Plugins.PNG?raw=true)
+![Create_First_User](https://github.com/kul-samples/jenkins/blob/main/5_create_first_user.PNG?raw=true)
+![Instance_configuration](https://github.com/kul-samples/jenkins/blob/main/6_instance_configuration.PNG?raw=true)
+![Jenkins_ready](https://github.com/kul-samples/jenkins/blob/main/7_jenkins_ready.PNG?raw=true)
+![Jenkins_dashboard](https://github.com/kul-samples/jenkins/blob/main/8_Jenkins_dashboard.PNG?raw=true)
