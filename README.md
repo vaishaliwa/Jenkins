@@ -54,4 +54,5 @@ drwx------  4 ubuntu ubuntu 4096 Aug 11 06:22 secrets
 -rw-rw-r--  1 ubuntu ubuntu 1595 Aug 11 06:22 config.xml
 drwxrwxr-x  2 ubuntu ubuntu 4096 Aug 11 06:22 updates
 ```
-11. Access Jenkins Using `http://3.15.199.147:8080`
+11. Access Jenkins Using `http://3.15.199.147:8080` on browser the 
+![Jenkins Unlock](https://github.com/kul-samples/jenkins/blob/main/1_Unlock%20Jenkins.PNG?raw=true)
