@@ -1,5 +1,5 @@
 ### Add Credentials for GITHUB as User ID & PWD
-1. Got to Jenkins dashboard `http://http://3.15.199.147:8080/`
+1. Got to Jenkins dashboard `http://3.15.199.147:8080/`
 2. Select `Manage Jenkins`
 3. Select `Manage Credentials`
 4. Select Store as `Jenkins` & System as `Global`
