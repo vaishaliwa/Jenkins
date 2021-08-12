@@ -91,3 +91,18 @@ pipeline {
 6. Under `Script Path` add the name of pipeline script, like `Jenkinsfile`
 ### Sample stage view
 ![Declarative_SCM-Checkout](https://github.com/kul-samples/jenkins/blob/main/labs/declarative_scm_checkout.PNG?raw=true)
+
+### Using pipeline syntax
+1. Go to the pipline build `http://18.191.185.219:8080/job/firstPipeline/`
+2. Select `Pipeline Syntax`. Select `Snippet Generator`.
+3. Under `Sample Step` select `git: Git`
+4. Add `Repository URL` as `https://github.com/kul-samples/java_sample_webapp.git`, `branch` as `main`, `Credentials` as `Github credentials`.
+5. Click on `Generate Pipeline Script` to prepare pipeine step.
+6. Copy the synxtax and add the same in Jenkinsfile using below code:
+```
+stage ('Checkout Java Code'){
+  steps{
+    git branch: 'main', credentialsId: 'GITHUB-CREDS', url: 'https://github.com/kul-samples/java_sample_webapp.git'
+  }
+}
+```
