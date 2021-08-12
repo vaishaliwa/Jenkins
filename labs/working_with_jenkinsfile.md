@@ -22,8 +22,8 @@ pipeline {
 ### Adding more stages to the pipeline
 1. Configure your build
 2. Go to pipeline & update pipeline code with below code:
-3. ```
-4. pipeline {
+```
+pipeline {
     agent any
 
     stages {
