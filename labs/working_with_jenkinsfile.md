@@ -81,3 +81,13 @@ pipeline {
     }
 }
 ```
+
+### Take Pipeline from SCM (GITHUB)
+1. Edit the build and select Definition as `Pipeline Script from SCM` under pipeline
+2. Under SCM select `Git`
+3. Under `Repository URL` add Github repo where Jenkinsfile is avaiable, `https://github.com/kul-samples/jenkins.git`
+4. Under `Credentials` select `Github-creds`
+5. Under `Branches to build` add `*/main`
+6. Under `Script Path` add the name of pipeline script, like `Jenkinsfile`
+### Sample stage view
+![Declarative_SCM-Checkout](https://github.com/kul-samples/jenkins/blob/main/labs/declarative_scm_checkout.PNG?raw=true)
