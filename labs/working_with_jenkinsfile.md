@@ -17,3 +17,26 @@ pipeline {
     }
 }
 ```
+![Single_stage](https://github.com/kul-samples/jenkins/blob/main/labs/Single_stage.PNG?raw=true)
+
+### Adding more stages to the pipeline
+1. Configure your build
+2. Go to pipeline & update pipeline code with below code:
+3. ```
+4. pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('How are you?') {
+            steps {
+                echo 'How are you?'
+            }
+        }
+    }
+}
+```
