@@ -127,4 +127,12 @@ tools {
   maven 'mvn_3.8.1'
 }
 ```
+### New stage to run maven process
+```
+stage('Build Package') {
+  steps {
+    sh 'mvn clean package'
+  }
+}
+```
 ![declarative_tools_install](https://github.com/kul-samples/jenkins/blob/main/labs/declarative_tools_install.PNG?raw=true)
