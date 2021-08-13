@@ -112,3 +112,18 @@ agent {
   label 'linux'
 }
 ```
+
+### Installing tool for maven builds
+1. Go to Jenkins Dashboard
+2. Select `Manage Jenkins`
+3. Select `Global Tool Configuration`
+4. Under `Maven`. Click `Add Maven`.
+5. Add `Name` as `mvn_3.8.1`
+6. Select `Install automatically` & Select `3.8.1` in `Version`. Click `Save`
+
+### Update Jenkinsfile to use Installed maven version during the build
+```
+tools {
+  maven 'mvn_3.8.1'
+}
+```
