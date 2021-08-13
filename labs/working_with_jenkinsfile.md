@@ -106,3 +106,9 @@ stage ('Checkout Java Code'){
   }
 }
 ```
+### Run builds on specfifc agents using labels unders agent tag
+```
+agent {
+  label 'linux'
+}
+```
