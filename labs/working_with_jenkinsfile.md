@@ -144,7 +144,9 @@ stage('Build Package') {
     sh 'mvn clean package'
   }
   post {
-    archive 'target/devops.war'
+    always {
+      archive 'target/devops.war'
+    }
   }
 }
 ```
