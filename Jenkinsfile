@@ -9,10 +9,10 @@ pipeline {
             git branch: 'master', credentialsId: 'GITHUB-CREDS', url: 'https://github.com/kul-samples/java_sample_webapp.git'
           }
         }
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
+        stage('Build Package') {
+          steps {
+            sh 'mvn clean package'
+          }
         }
         stage('How are you?') {
             steps {
