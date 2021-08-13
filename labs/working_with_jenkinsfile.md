@@ -121,9 +121,10 @@ agent {
 5. Add `Name` as `mvn_3.8.1`
 6. Select `Install automatically` & Select `3.8.1` in `Version`. Click `Save`
 
-### Update Jenkinsfile to use Installed maven version during the build
+### Update Jenkinsfile to use Installed maven version during the build, Desclarative tools setup
 ```
 tools {
   maven 'mvn_3.8.1'
 }
 ```
+![declarative_tools_install](https://github.com/kul-samples/jenkins/blob/main/labs/declarative_tools_install.PNG?raw=true)
