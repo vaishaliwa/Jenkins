@@ -136,3 +136,15 @@ stage('Build Package') {
 }
 ```
 ![declarative_tools_install](https://github.com/kul-samples/jenkins/blob/main/labs/declarative_tools_install.PNG?raw=true)
+
+### Archive artifacts from one stage
+```
+stage('Build Package') {
+  steps {
+    sh 'mvn clean package'
+  }
+  post {
+    archive 'target/devops.war'
+  }
+}
+```
