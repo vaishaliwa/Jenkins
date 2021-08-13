@@ -4,13 +4,13 @@ pipeline {
     }
   
     tools {
-  maven 'mvn_3.8.1'
+      maven 'mvn_3.8.1'
     }
 
     stages {
         stage ('Checkout Java Code'){
           steps{
-            git branch: 'main', credentialsId: 'vaishaliwa', url: 'https://github.com/kul-samples/java_sample_webapp.git'
+            git branch: 'master', credentialsId: 'GITHUB-CREDS', url: 'https://github.com/kul-samples/java_sample_webapp.git'
           }
         }
         stage('Build Package') {
@@ -23,9 +23,16 @@ pipeline {
             }
           }
         }
-        stage('How are you?') {
+        stage('create docker image') {
             steps {
-                echo 'How are you?'
+                sh '''docker image ls 
+                  docker image build .  -f Dockerfile -t kulbhushanmayer/devops:latest
+                  docker image ls'''
+            }
+        }
+        stage('push docker image') {
+            steps {
+                sh 'docker push kulbhushanmayer/devops:latest'
             }
         }
         stage ('SAST'){
