@@ -18,7 +18,9 @@ pipeline {
             sh 'mvn clean package'
           }
           post {
-            archive 'target/devops.war'
+            always {
+              archive 'target/devops.war'
+            }
           }
         }
         stage('How are you?') {
